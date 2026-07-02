@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /c/Unity/Labyrinth && cat ProjectSettings/ProjectVersion.txt && echo --- && cat Packages/manifest.json)",
+      "Bash(python3 -c ' *)",
+      "Bash(xargs cat)",
+      "Bash(\"/c/Program Files/Unity/Hub/Editor/6000.2.11f1/Editor/Unity.exe\" -batchmode -nographics -projectPath \"C:/Unity/Labyrinth\" -executeMethod PlayModeSmokeTest.Run -logFile \"C:/Unity/Labyrinth/smoke_test.log\")",
+      "Bash(echo \"EXIT CODE: $?\")",
+      "Bash(ps -W)",
+      "Bash(date; echo *)",
+      "Bash(cat \"/c/Users/Gin/AppData/Local/Temp/claude/C--Unity-Labyrinth-Assets/2a88a088-f4ab-49fe-95b1-c671eee25c36/tasks/b9m8jjhen.output\" 2>/dev/null | tail -40)",
+      "Bash(find /c/Users/Gin/AppData/Local/Unity -iname \"*crash*\" -newer /c/Unity/Labyrinth/compile_check.log 2>/dev/null | head -20 *)",
+      "PowerShell(Get-CimInstance Win32_Process -Filter \"Name='Unity.exe'\")",
+      "Bash(find /c -maxdepth 2 -iname \"*labyrinth*build*\")",
+      "Read(//c/Users/Gin/AppData/LocalLow/DefaultCompany/**)",
+      "Bash(cat \"/c/Users/Gin/AppData/LocalLow/DefaultCompany/Labyrinth/Player.log\")"
+    ]
+  }
+}
